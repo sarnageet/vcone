@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC One | E-commerce Solutions for UK Brands Expanding to India</title>
+    <meta name="description" content="Launch & grow your e-commerce brand in India without setting up an entity. UK-India FTA specialists, end-to-end e-commerce solutions.">
+    <meta name="keywords" content="India D2C Growth, Free Trade Agreement, UK-India FTA, No Entity Setup Needed">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a2540 0%, #1e4d78 100%);
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+        /* Flow diagram styles */
+        .flow-arrow {
+            position: relative;
+        }
+        
+        .flow-arrow::after {
+            content: '→';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #3b82f6;
+        }
+        
+        @media (max-width: 768px) {
+            .flow-arrow::after {
+                content: '↓';
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                right: auto;
+                top: auto;
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            transition: transform 0.3s ease;
+            transform: translateX(-100%);
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        /* Service section gradients */
+        .marketplace-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+        }
+        
+        .d2c-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        
+        .marketing-gradient {
+            background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+        }
+
+ /* ADD THE NEW CSS HERE */
+    .category-card {
+        transition: all 0.3s ease;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .emoji {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <img src="vcone-image.png" alt="logo" width="100" height="100">
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#why-india" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Why India</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-medium">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#pricing" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Pricing</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition cta-button">Contact Us</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 p-5">
+            <div class="flex justify-between items-center mb-8">
+                <a href="#" class="text-2xl font-bold text-blue-600">VC<span class="text-gray-800">One</span></a>
+                <button id="close-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="#why-india" class="text-gray-700 hover:text-blue-600 font-medium py-2">Why India</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium py-2">About</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium py-2">Services</a>
+                <a href="#pricing" class="text-gray-700 hover:text-blue-600 font-medium py-2">Pricing</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition text-center mt-4">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-28 pb-20 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight animate-fadeIn">
+    Launch & Grow Your <span style="white-space: nowrap;">E-commerce</span> Business in India with VC One
+</h1>
+                    <p class="text-xl text-blue-100 mt-6 animate-fadeIn delay-100">
+                        Tap into India's booming e-commerce market — without opening an entity.
+                    </p>
+                    <div class="mt-8 animate-fadeIn delay-200">
+                        <a href="#contact" class="bg-white text-blue-700 px-8 py-3 rounded-md font-semibold text-lg hover:bg-blue-50 transition cta-button inline-block">
+                            Book a Discovery Call
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10 animate-fadeIn delay-300">
+    <div class="relative">
+        <svg class="w-full h-80" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background with grid -->
+            <defs>
+                <linearGradient id="barGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="barGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="barGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            
+            <!-- Grid lines -->
+            <g stroke="#ffffff" stroke-width="1" opacity="0.2">
+                <line x1="50" y1="50" x2="450" y2="50"/>
+                <line x1="50" y1="100" x2="450" y2="100"/>
+                <line x1="50" y1="150" x2="450" y2="150"/>
+                <line x1="50" y1="200" x2="450" y2="200"/>
+                <line x1="50" y1="250" x2="450" y2="250"/>
+                <line x1="50" y1="280" x2="450" y2="280"/>
+            </g>
+            
+            <!-- 3D Style Bars -->
+            <!-- Bar 1 -->
+            <g>
+                <rect x="60" y="240" width="35" height="40" fill="url(#barGradient1)" rx="3"/>
+                <path d="M60,240 L70,230 L105,230 L95,240 Z" fill="#3b82f6" opacity="0.8"/>
+                <path d="M95,240 L105,230 L105,270 L95,280 Z" fill="#1e40af" opacity="0.9"/>
+            </g>
+            
+            <!-- Bar 2 -->
+            <g>
+                <rect x="120" y="210" width="35" height="70" fill="url(#barGradient1)" rx="3"/>
+                <path d="M120,210 L130,200 L165,200 L155,210 Z" fill="#3b82f6" opacity="0.8"/>
+                <path d="M155,210 L165,200 L165,270 L155,280 Z" fill="#1e40af" opacity="0.9"/>
+            </g>
+            
+            <!-- Bar 3 -->
+            <g>
+                <rect x="180" y="170" width="35" height="110" fill="url(#barGradient2)" rx="3"/>
+                <path d="M180,170 L190,160 L225,160 L215,170 Z" fill="#0284c7" opacity="0.8"/>
+                <path d="M215,170 L225,160 L225,270 L215,280 Z" fill="#0369a1" opacity="0.9"/>
+            </g>
+            
+            <!-- Bar 4 -->
+            <g>
+                <rect x="240" y="130" width="35" height="150" fill="url(#barGradient2)" rx="3"/>
+                <path d="M240,130 L250,120 L285,120 L275,130 Z" fill="#0284c7" opacity="0.8"/>
+                <path d="M275,130 L285,120 L285,270 L275,280 Z" fill="#0369a1" opacity="0.9"/>
+            </g>
+            
+            <!-- Bar 5 -->
+            <g>
+                <rect x="300" y="90" width="35" height="190" fill="url(#barGradient3)" rx="3"/>
+                <path d="M300,90 L310,80 L345,80 L335,90 Z" fill="#0891b2" opacity="0.8"/>
+                <path d="M335,90 L345,80 L345,270 L335,280 Z" fill="#0e7490" opacity="0.9"/>
+            </g>
+            
+            <!-- Bar 6 -->
+            <g>
+                <rect x="360" y="60" width="35" height="220" fill="url(#barGradient3)" rx="3"/>
+                <path d="M360,60 L370,50 L405,50 L395,60 Z" fill="#0891b2" opacity="0.8"/>
+                <path d="M395,60 L405,50 L405,270 L395,280 Z" fill="#0e7490" opacity="0.9"/>
+            </g>
+            
+            <!-- Growth Arrow - More Prominent -->
+            <path d="M80,260 Q180,200 280,140 Q320,120 380,80" 
+                  stroke="#ffffff" stroke-width="5" fill="none" 
+                  stroke-linecap="round" opacity="1"/>
+            
+            <!-- Arrow Head - Larger and More Visible -->
+            <g transform="translate(380, 80) rotate(-30)">
+                <path d="M0,0 L-20,12 L-15,0 L-20,-12 Z" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+            </g>
+            
+            <!-- Floating elements for dynamic effect -->
+            <circle cx="420" cy="70" r="3" fill="#60a5fa" opacity="0.6"/>
+            <circle cx="400" cy="50" r="2" fill="#3b82f6" opacity="0.5"/>
+            <circle cx="430" cy="85" r="2.5" fill="#1e40af" opacity="0.4"/>
+            
+        </svg>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why India Section -->
+    <section id="why-india" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">India – An E-commerce Goldmine</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    The Indian e-commerce market presents unprecedented opportunities for UK brands looking to expand globally.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">850M+</h3>
+                    </div>
+                    <p class="text-gray-600">Internet users in India, creating a massive digital marketplace ready to be tapped.</p>
+                </div>
+                
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">100M+</h3>
+                    </div>
+                    <p class="text-gray-600">Active online shoppers with increasing purchasing power and appetite for international brands.</p>
+                </div>
+                
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">#3 Global Market</h3>
+                    </div>
+                    <p class="text-gray-600">India ranks third in the global e-commerce market, after China and the US, with exponential growth.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-blue-50 p-8 rounded-xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">UK–India Free Trade Agreement</h3>
+                        <p class="text-gray-600 mb-4">
+                            The recently signed FTA between the UK and India offers unprecedented advantages for British brands:
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Reduced tariffs on imported goods</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Streamlined customs procedures</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Preferential market access</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+    <div class="flex justify-center items-center space-x-8">
+        <!-- India Flag -->
+        <div class="w-16 h-16 bg-white rounded-full border-2 border-blue-300 flex items-center justify-center p-2">
+            <svg class="w-full h-full" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="8" width="50" height="8" fill="#FF9933"/>
+                <rect x="5" y="16" width="50" height="8" fill="#FFFFFF"/>
+                <rect x="5" y="24" width="50" height="8" fill="#138808"/>
+                <circle cx="30" cy="20" r="4" fill="none" stroke="#000080" stroke-width="0.5"/>
+                <g stroke="#000080" stroke-width="0.3" fill="none">
+                    <line x1="30" y1="16" x2="30" y2="24"/>
+                    <line x1="26" y1="20" x2="34" y2="20"/>
+                    <line x1="27.2" y1="17.2" x2="32.8" y2="22.8"/>
+                    <line x1="32.8" y1="17.2" x2="27.2" y2="22.8"/>
+                </g>
+            </svg>
+        </div>
+        
+<!-- Handshake -->
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+    <span class="text-3xl">🤝</span>
+</div>
+        
+        <!-- UK Flag -->
+        <div class="w-16 h-16 bg-white rounded-full border-2 border-blue-300 flex items-center justify-center p-2">
+            <svg class="w-full h-full" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="8" width="50" height="24" fill="#012169"/>
+                <g stroke="#FFFFFF" stroke-width="2">
+                    <path d="M5,8 L55,32 M55,8 L5,32"/>
+                    <path d="M30,8 L30,32 M5,20 L55,20"/>
+                </g>
+                <g stroke="#C8102E" stroke-width="1">
+                    <path d="M5,8 L55,32 M55,8 L5,32"/>
+                    <path d="M30,8 L30,32 M5,20 L55,20" stroke-width="1.5"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About VC One</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 mb-8 text-center">
+                    At VC One, we are not just a service provider — we're your full-stack partner for launching and scaling e-commerce operations in India.
+                </p>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">We bring together specialized expertise across:</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Marketplace operations</h4>
+                                <p class="text-gray-600">Expert management of Amazon, Flipkart, and other major Indian marketplaces</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Warehousing, fulfillment & logistics</h4>
+                                <p class="text-gray-600">End-to-end supply chain management tailored for the Indian market</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Shopify development, store localization & tech setup</h4>
+                                <p class="text-gray-600">Custom-tailored online stores optimized for Indian consumers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Performance & affiliate marketing</h4>
+                                <p class="text-gray-600">Strategic campaigns designed for the unique Indian digital landscape</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Taxation, invoicing & remittance flow</h4>
+                                <p class="text-gray-600">Compliant financial operations with transparent reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-600 text-white rounded-xl p-8 text-center">
+                    <h3 class="text-xl font-semibold mb-4">All delivered under one unified billing and compliance entity</h3>
+                    <p class="text-lg mb-6">So you don't have to set up a company in India.</p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-6">
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-md">Built to scale</div>
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-md">Powered by specialists</div>
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-md">Trusted by global e-commerce brands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive solutions designed to make your India expansion seamless and successful.
+                </p>
+            </div>
+            
+            <!-- Marketplace Management -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="service-card bg-white shadow-lg overflow-hidden">
+                    <div class="marketplace-gradient text-white p-6">
+                        <h3 class="text-2xl font-bold">Marketplace Management</h3>
+                    </div>
+                    
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6">
+                            Sell your products on Amazon India, Flipkart, and other platforms — mapped from your UK listings.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">Top Services:</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Mapped Listings (retaining ratings & reviews)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Catalog & Pricing Management</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Inventory Sync</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Performance Tracking</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Email + Phone Support (included)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">How It Works:</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-2">
+    <div class="text-center">
+        <div class="bg-blue-100 p-3 rounded-full mx-auto mb-2 w-12 h-12 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+            </svg>
+        </div>
+        <p class="text-sm text-gray-700">You ship inventory</p>
+        <div class="hidden md:block text-blue-600 text-xl mt-2">→</div>
+        <div class="md:hidden text-blue-600 text-xl mt-2">↓</div>
+    </div>
+    
+    <div class="text-center">
+        <div class="bg-blue-100 p-3 rounded-full mx-auto mb-2 w-12 h-12 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+        </div>
+        <p class="text-sm text-gray-700">We import and clear</p>
+        <div class="hidden md:block text-blue-600 text-xl mt-2">→</div>
+        <div class="md:hidden text-blue-600 text-xl mt-2">↓</div>
+    </div>
+    
+    <div class="text-center">
+        <div class="bg-blue-100 p-3 rounded-full mx-auto mb-2 w-12 h-12 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+        </div>
+        <p class="text-sm text-gray-700">We map and list products</p>
+        <div class="hidden md:block text-blue-600 text-xl mt-2">→</div>
+        <div class="md:hidden text-blue-600 text-xl mt-2">↓</div>
+    </div>
+    
+    <div class="text-center">
+        <div class="bg-blue-100 p-3 rounded-full mx-auto mb-2 w-12 h-12 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+            </svg>
+        </div>
+        <p class="text-sm text-gray-700">Orders get fulfilled</p>
+        <div class="hidden md:block text-blue-600 text-xl mt-2">→</div>
+        <div class="md:hidden text-blue-600 text-xl mt-2">↓</div>
+    </div>
+    
+    <div class="text-center">
+        <div class="bg-blue-100 p-3 rounded-full mx-auto mb-2 w-12 h-12 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+        </div>
+        <p class="text-sm text-gray-700">We remit monthly profits</p>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shopify Store Setup & Management -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="service-card bg-white shadow-lg overflow-hidden">
+                    <div class="d2c-gradient text-white p-6">
+                        <h3 class="text-2xl font-bold">Shopify Store Setup & Management</h3>
+                    </div>
+                    
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6">
+                            We build and localize your Shopify store for Indian customers, while managing fulfillment and warehousing.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-4">Tech & Localization:</h4>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Shopify store setup</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">App integration & tracking tools</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Localization for Indian audience</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Mobile-first optimization</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-4">Operations:</h4>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Warehousing in India</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Fulfillment & dispatch</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Inventory management & stock alerts</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Local warehouse coordination</span>
+            </li>
+        </ul>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Advertising & Marketing -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="service-card bg-white shadow-lg overflow-hidden">
+                    <div class="marketing-gradient text-white p-6">
+                        <h3 class="text-2xl font-bold">Advertising & Marketing</h3>
+                    </div>
+                    
+                    <div class="p-6">
+    <p class="text-gray-700 mb-6">
+        We drive conversions through performance campaigns, affiliate marketing, and influencer collaborations.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800 mb-4">Performance Marketing:</h4>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700">Paid media buying (Meta, Google, YouTube)</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700">Performance marketing on search & social</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700">Retargeting & funnel optimization</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800 mb-4">Affiliate Marketing:</h4>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700">Affiliate marketing for India</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700">Dedicated affiliate managers</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700">Influencer campaigns & UGC</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            
+            <!-- Add-On Services -->
+            <div class="max-w-5xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Optional Add-On Services</h3>
+                <p class="text-gray-600 mb-8">Enhance your India expansion with these specialized services:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="service-card bg-white shadow-lg overflow-hidden border-t-4 border-blue-600">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Dedicated Customer Support Agents (UK Timezone)</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                For brands who want us to handle their customer support. We provide fluent English-speaking agents working in UK business hours.
+                            </p>
+                            <div class="text-right">
+                                <span class="text-blue-600 font-medium">Billed Separately</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card bg-white shadow-lg overflow-hidden border-t-4 border-blue-600">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Affiliate Campaign Managers (For Global Setup)</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                To manage your affiliate offers in the UK while you're scaling in India.
+                            </p>
+                            <div class="text-right">
+                                <span class="text-blue-600 font-medium">Billed Separately</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Works for Any Product Category Section -->
+<section class="py-16 px-4 bg-gradient-to-br from-indigo-50 to-blue-50">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Works for Any Product Category</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Whether you sell gadgets, supplements or grooming products — our system supports your brand.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Fashion & Apparel -->
+            <div class="category-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl">
+                <div class="emoji mb-4">👗</div>
+                <h3 class="text-xl font-semibold text-gray-800">Fashion & Apparel</h3>
+            </div>
+            
+            <!-- Home & Kitchen -->
+            <div class="category-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl">
+                <div class="emoji mb-4">🏠</div>
+                <h3 class="text-xl font-semibold text-gray-800">Home & Kitchen</h3>
+            </div>
+            
+            <!-- Health & Wellness -->
+            <div class="category-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl">
+                <div class="emoji mb-4">💊</div>
+                <h3 class="text-xl font-semibold text-gray-800">Health & Wellness</h3>
+            </div>
+            
+            <!-- Beauty & Personal Care -->
+            <div class="category-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl">
+                <div class="emoji mb-4">💄</div>
+                <h3 class="text-xl font-semibold text-gray-800">Beauty & Personal Care</h3>
+            </div>
+            
+            <!-- Tech Accessories -->
+            <div class="category-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl">
+                <div class="emoji mb-4">📱</div>
+                <h3 class="text-xl font-semibold text-gray-800">Tech Accessories</h3>
+            </div>
+            
+            <!-- Pet Supplies & Toys -->
+            <div class="category-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl">
+                <div class="emoji mb-4">🐾</div>
+                <h3 class="text-xl font-semibold text-gray-800">Pet Supplies & Toys</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pricing</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Transparent pricing with no hidden fees. All taxes included.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-blue-600 text-white">
+                                <th class="py-4 px-6 text-left">Service Tracks Included</th>
+                                <th class="py-4 px-6 text-right">Price (GBP/month)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    <tr class="border-b border-gray-200 hover:bg-blue-50 transition">
+        <td class="py-4 px-6">
+            <span class="font-medium text-gray-800">Marketplace Management</span>
+        </td>
+        <td class="py-4 px-6 text-right font-semibold">£3,000</td>
+    </tr>
+    <tr class="border-b border-gray-200 hover:bg-blue-50 transition">
+        <td class="py-4 px-6">
+            <span class="font-medium text-gray-800">Marketplace + Shopify Store Setup & Management</span>
+        </td>
+        <td class="py-4 px-6 text-right font-semibold">£7,000</td>
+    </tr>
+    <tr class="hover:bg-blue-50 transition">
+        <td class="py-4 px-6">
+            <span class="font-medium text-gray-800">Marketplace + Shopify Store + Advertising & Marketing</span>
+        </td>
+        <td class="py-4 px-6 text-right font-semibold">£10,000</td>
+    </tr>
+</tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-6 text-center text-gray-600">
+                    <p>Note: Pricing includes all taxes, billing is monthly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Flow Model -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Financial Flow Model</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    A seamless process from shipping to revenue transfer — with no entity setup required.
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="bg-blue-50 rounded-xl p-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center text-center">
+                        <div class="mb-8 md:mb-0 flow-arrow relative">
+                            <div class="bg-blue-600 text-white p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">You Ship</h4>
+                            <p class="text-gray-600 text-sm">Send your inventory to our UK collection point</p>
+                        </div>
+                        
+                        <div class="mb-8 md:mb-0 flow-arrow relative">
+                            <div class="bg-blue-600 text-white p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">We Import</h4>
+                            <p class="text-gray-600 text-sm">We handle customs clearance and import duties</p>
+                        </div>
+                        
+                        <div class="mb-8 md:mb-0 flow-arrow relative">
+                            <div class="bg-blue-600 text-white p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">We Sell in India</h4>
+                            <p class="text-gray-600 text-sm">Your products are listed and sold across platforms</p>
+                        </div>
+                        
+                        <div class="mb-8 md:mb-0 flow-arrow relative">
+                            <div class="bg-blue-600 text-white p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">We Invoice</h4>
+                            <p class="text-gray-600 text-sm">We handle all local taxation and compliance</p>
+                        </div>
+                        
+                        <div>
+                            <div class="bg-blue-600 text-white p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">We Remit Profits</h4>
+                            <p class="text-gray-600 text-sm">Net profit is remitted to your UK account</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <div class="mb-6 md:mb-0 md:mr-6">
+                                <svg class="w-16 h-16 text-blue-600 mx-auto md:mx-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-center md:text-left">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">No entity setup required</h4>
+                                <p class="text-gray-600">
+                                    We handle all the legal and compliance aspects of selling in India, so you don't need to establish a local entity. You get full reporting and transparency monthly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Ready to Launch in India?</h2>
+                        <p class="text-lg text-gray-600 mb-8 text-center">
+                            We'll take care of everything from listing to fulfillment, tech to marketing.
+                        </p>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="website" class="block text-gray-700 font-medium mb-2">Brand Website</label>
+                                <input type="url" id="website" name="website" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-blue-700 transition cta-button">
+                                    Book a Call with VC One
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white">VC<span class="text-blue-400">One</span></a>
+                    <p class="mt-4 text-gray-400 max-w-md">
+                        Your full-stack partner for launching and scaling e-commerce operations in India.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#why-india" class="text-gray-400 hover:text-white transition">Why India</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                            <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Marketplace Management</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Shopify Store Setup</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Advertising & Marketing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <a href="mailto:info@vcone.com" class="text-gray-400 hover:text-white transition">info@vcone.com</a>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <a href="tel:+441234567890" class="text-gray-400 hover:text-white transition">+91 997 166 6515</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 VC One. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 ```
